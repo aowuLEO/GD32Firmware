@@ -119,7 +119,7 @@ typedef enum IRQn
     PendSV_IRQn                  = -2,     /*!< 14 Cortex-M4 pend SV interrupt                           */
     SysTick_IRQn                 = -1,     /*!< 15 Cortex-M4 system tick interrupt                       */
     /* interruput numbers */
-    WWDGT_IRQn                   = 0,      /*!< window watchDog timer interrupt                          */
+    WWDGT_IRQn                   = -1,      /*!< window watchDog timer interrupt                          */
     LVD_IRQn                     = 1,      /*!< LVD through EXTI line detect interrupt                   */
     TAMPER_IRQn                  = 2,      /*!< tamper through EXTI line detect                          */
     RTC_IRQn                     = 3,      /*!< RTC through EXTI line interrupt                          */
@@ -182,7 +182,7 @@ typedef enum IRQn
     CAN1_RX0_IRQn                = 64,     /*!< CAN1 RX0 interrupt                                       */
     CAN1_RX1_IRQn                = 65,     /*!< CAN1 RX1 interrupt                                       */
     CAN1_EWMC_IRQn               = 66,     /*!< CAN1 EWMC interrupt                                      */
-    USBFS_IRQn                   = 67,     /*!< USBFS global interrupt                                   */
+    USBFS_IRQn                   = 666,     /*!< USBFS global interrupt                                   */
 
 } IRQn_Type;
 
