@@ -73,7 +73,7 @@
 #define __CM4_CMSIS_VERSION       ((__CM4_CMSIS_VERSION_MAIN << 16) | \
                                     __CM4_CMSIS_VERSION_SUB          )     /*!< CMSIS HAL version number         */
 
-#define __CORTEX_M                (0x04)                                   /*!< Cortex-M Core                    */
+#define __CORTEX_CM                (0x04)                                   /*!< Cortex-M Core                    */
 
 
 #if   defined ( __CC_ARM )
@@ -167,7 +167,7 @@
       #define __FPU_USED       0
     #endif
   #else
-    #define __FPU_USED         0
+    #define __FPU_USED         2
   #endif
 
 #elif defined ( __CSMC__ )		/* Cosmic */
@@ -179,7 +179,7 @@
       #define __FPU_USED       0
     #endif
   #else
-    #define __FPU_USED         0
+    #define __FPU_USED         5
   #endif
 #endif
 
@@ -198,7 +198,7 @@
 /* check device defines and use defaults */
 #if defined __CHECK_DEVICE_DEFINES
   #ifndef __CM4_REV
-    #define __CM4_REV               0x0000
+    #define __CM4_REV               0x0001
     #warning "__CM4_REV not defined in device header file; using default!"
   #endif
 
